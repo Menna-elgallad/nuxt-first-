@@ -1,0 +1,1 @@
+export { default } from "file:///E:/menna/humm/humm-nuxt-website/node_modules/@nuxt/vite-builder/dist/runtime/vite-node.mjs"

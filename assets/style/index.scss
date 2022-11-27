@@ -1,0 +1,91 @@
+@import "./bootstrap.scss";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+* {
+    font-family: 'Roboto', sans-serif;
+    // margin: 0;
+    // padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+    font-weight: 800;
+}
+
+.side-enter-from {
+    transform: translatex(-40px);
+    opacity: 0;
+}
+
+.side-enter-to {
+    transform: translatex(0);
+    opacity: 1;
+}
+
+.side-enter-active {
+    transition: all 0.2s ease-out;
+}
+
+.side-leave-from {
+    transform: translatex(0);
+    opacity: 1;
+}
+
+.side-leave-to {
+    transform: translatex(-40px);
+    opacity: 0;
+}
+
+.side-leave-active {
+    transition: all 0.2s ease-out;
+}
+
+.primary-button {
+    padding: 0.6rem 0.9rem;
+    border-radius: 0.8rem;
+    background-color: $main-color;
+    border: none;
+    outline: none;
+    color: white;
+    transition: 0.5s ease;
+    &:hover {
+        box-shadow: 0 0 8px #e7bdae;
+        transform: scale(1.1);
+    }
+}
+
+.main-padding {
+    padding-top: 5rem;
+}
+
+.main-margin {
+    margin-top: 4rem;
+}
+
+.main-padding2 {
+    padding: 5rem 0;
+}
+
+h1 {
+    font-size: calc(1.1625rem + 2.43529vw) !important;
+}

@@ -1,0 +1,22 @@
+query getarticles($limit: Int) {
+  Article(filter: { type: { _eq: "read" } }, limit: $limit) {
+    type
+    video
+    slug
+    user_created {
+      first_name
+      last_name
+    }
+    translations {
+      cover {
+        id
+        title
+      }
+    }
+    date_created_func {
+      day
+      month
+      year
+    }
+  }
+}

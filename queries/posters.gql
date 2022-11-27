@@ -1,0 +1,26 @@
+query posters {
+  posters {
+    translations {
+      normal2_cover {
+        id
+      }
+      normal2_title
+      normal2_url
+      normal_cover {
+        id
+      }
+      normal_title
+      normal_url
+      wide2_cover {
+        id
+      }
+      wide2_title
+      wide2_url
+      wide_cover {
+        id
+      }
+      wide_title
+      wide_url
+    }
+  }
+}

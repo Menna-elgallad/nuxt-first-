@@ -1,0 +1,25 @@
+query getfood {
+  Article(limit: 8, filter: { type: { _eq: "food" } }) {
+    id
+    slug
+    type
+    video
+    press_link
+    date_created
+
+    category {
+      id
+      slug
+      translations {
+        title
+        cover {
+          id
+        }
+      }
+      user_created {
+        first_name
+        last_name
+      }
+    }
+  }
+}

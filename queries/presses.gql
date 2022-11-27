@@ -1,0 +1,28 @@
+query presses($limit: Int) {
+  Article(
+    filter: {
+      type: { _eq: "press" }
+      translations: { languages_code: { code: { _eq: "ar-EG" } } }
+    }
+    limit: $limit
+  ) {
+    slug
+    press_link
+    type
+    user_created {
+      last_name
+      first_name
+    }
+    translations {
+      title
+      cover {
+        id
+      }
+    }
+    date_created_func {
+      day
+      year
+      month
+    }
+  }
+}
